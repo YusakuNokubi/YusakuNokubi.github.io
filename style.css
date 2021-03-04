@@ -1,0 +1,95 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  border-bottom: 3px solid #f7f7f7;
+}
+
+div {
+  margin: 30px;
+}
+
+header, nav, h2, .main-visual, footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
+header {
+  width: 90%; /* 横幅90% */
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.header-text {
+  font-size: 32px;
+  border-bottom: 8px solid #f7f7f7;
+}
+
+header .SNS {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+}
+
+.SNS a {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+main {
+  display: flex; /* Flexboxの利用 */
+  justify-content: center; /* 要素の横並び・中央寄せ */
+  margin: 0 auto; /* 要素の中央揃え */
+  padding: 20px 0; /* 上下に70px、左右に0pxの内側余白 */
+}
+
+.sidebar {
+  margin: 0 10px;
+  width: 100px;
+  background-color: #F6F6F6;
+  margin-left: 0%;
+  border-right: solid 1px #A7D7F9;
+}
+
+.sidebar-item {
+  margin: 0;
+  position: sticky; /*flexの場合要素がついてくる*/
+  margin-bottom: 0;
+  top: 10px;
+  z-index: 1;
+}
+
+#profile li{
+  margin: 5px;
+}
+
+.page {
+  flex: 1;  /*横にはみ出たスペースをpageに入れ込む*/
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  line-height: 120px;
+  background-color: #848282;
+}
+
+.footer-text {
+  color: #fff;
+}
+
+/* スマホの大きさに対応 */
+@media screen and (max-width: 425px) {
+
+}
