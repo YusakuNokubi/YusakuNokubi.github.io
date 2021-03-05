@@ -23,7 +23,8 @@ header, nav, h2, .main-visual, footer {
 }
 
 header {
-  width: 90%; /* 横幅90% */
+  width: 90%;
+  /* 横幅90% */
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
@@ -47,10 +48,14 @@ header .SNS {
 }
 
 main {
-  display: flex; /* Flexboxの利用 */
-  justify-content: center; /* 要素の横並び・中央寄せ */
-  margin: 0 auto; /* 要素の中央揃え */
-  padding: 20px 0; /* 上下に70px、左右に0pxの内側余白 */
+  display: flex;
+  /* Flexboxの利用 */
+  justify-content: center;
+  /* 要素の横並び・中央寄せ */
+  margin: 0 auto;
+  /* 要素の中央揃え */
+  padding: 20px 0;
+  /* 上下に70px、左右に0pxの内側余白 */
 }
 
 .sidebar {
@@ -62,19 +67,21 @@ main {
 }
 
 .sidebar-item {
+  position: sticky;
+  /*flexの場合要素がついてくる*/
   margin: 0;
-  position: sticky; /*flexの場合要素がついてくる*/
-  margin-bottom: 0;
+  margin-bottom: 5px;
   top: 10px;
   z-index: 1;
 }
 
-#profile li{
+#profile li {
   margin: 5px;
 }
 
 .page {
-  flex: 1;  /*横にはみ出たスペースをpageに入れ込む*/
+  flex: 1;
+  /*横にはみ出たスペースをpageに入れ込む*/
 }
 
 footer {
@@ -90,6 +97,4 @@ footer {
 }
 
 /* スマホの大きさに対応 */
-@media screen and (max-width: 425px) {
-
-}
+@media screen and (max-width: 425px) {}
