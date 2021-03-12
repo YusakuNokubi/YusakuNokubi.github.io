@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
+  <!-- レスポンシブ対応 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <!-- FontAwesomeの読み込み -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -34,9 +36,9 @@
     <section class="page">
       <section id="profile">
         <h2>プロフィール</h2>
-        <li>大学：名古屋工業大学 情報工学科 知能情報分野３年</li>
-        <li>居住地：岐阜県</li>
-        <li>趣味：筋トレ，深夜ラジオ</li>
+        <ul>大学：名古屋工業大学 情報工学科 知能情報分野３年</ul>
+        <ul>居住地：岐阜県</ul>
+        <ul>趣味：筋トレ，深夜ラジオ</ul>
       </section>
       <section id="skill">
         <h2>スキル</h2>
@@ -89,7 +91,10 @@
       <section id="works">
         <h2>製作物</h2>
         <p>
-        <h3>ToDoリスト</h3>
+        <h3><a target="_blank"href="translate/index.html">英和リスト</a>　※firefox推奨</h3>
+        <p>まずはWebの基本となる，簡単なWebアプリを作成した．使用言語はHTML，CSS，JavaScript．</p>
+        <p>英単語と和訳を持つクラスを用意し，ローカルストレージに保存することでリロードに耐えている．
+        Chromeでは，最初の読み込み時にundifinedが２つ表示されるが，firefoxなら問題なく使用できた．</p>
         </p>
       </section>
     </section>
@@ -101,7 +106,7 @@
       <a target="blank"
         href="https://m.facebook.com/profile.php?id=100011529551165&refsrc=https%3A%2F%2Fwww.facebook.com%2Fprofile.php&_rdr"
         class="fab fa-facebook-square"></a>
-      <a target="blank" href="http://twitter.com/preengine" class="fab fa-twitter-square"></a>
+      <a target="blank" href="http://twitter.com/nitechny" class="fab fa-twitter-square"></a>
       <a target="black" href="https://github.com/YusakuNokubi" class="fab fa-github-square"></a>
     </div>
   </footer>

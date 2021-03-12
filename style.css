@@ -11,6 +11,7 @@ a {
 }
 
 h2 {
+  margin-top: 10px;
   border-bottom: 3px solid #f7f7f7;
 }
 
@@ -60,7 +61,7 @@ main {
 
 .sidebar {
   margin: 0 10px;
-  width: 100px;
+  width: 110px;
   background-color: #F6F6F6;
   margin-left: 0%;
   border-right: solid 1px #A7D7F9;
@@ -69,19 +70,23 @@ main {
 .sidebar-item {
   position: sticky;
   /*flexの場合要素がついてくる*/
-  margin: 0;
+  margin: 2px;
   margin-bottom: 5px;
   top: 10px;
-  z-index: 1;
 }
 
-#profile li {
+#profile ul {
   margin: 5px;
 }
 
 .page {
   flex: 1;
   /*横にはみ出たスペースをpageに入れ込む*/
+}
+
+.page h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -92,9 +97,35 @@ footer {
   background-color: #848282;
 }
 
+footer div {
+  margin: 0;
+}
+
 .footer-text {
   color: #fff;
 }
 
 /* スマホの大きさに対応 */
-@media screen and (max-width: 425px) {}
+@media screen and (max-width:425px) {
+  p {
+    font-size: 14px;
+  }
+  header .SNS {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+  }
+
+  .SNS a {
+    display: inline-block;
+    margin-left: 0px;
+  }
+
+  .sidebar {
+    width: 65px
+  }
+
+  .sidebar p {
+    font-size: 8px;
+  }
+}

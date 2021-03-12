@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--スマホに対応させる（レスポンシブ対応）-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Internet Explorerなら最新環境で表示-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome https://fontawesome.com/start -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Bootstrap https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>English</title>
+</head>
+
+<body>
+  <div class="contariner">
+    <!--Boostrapを呼び出すクラス-->
+    <header class="text-center my-4">
+      <!--marginのbottomの4番目のsizeをBoostrapから呼び出し-->
+      <h1 class="mb-4">英和リスト</h1>
+    </header>
+    <!--fromは入力送信を作成する要素-->
+    <form id="form" onsubmit="return false;" action="">
+      <input type="text" id="english" placeholder="単語">
+      <input type="text" id="japanese" placeholder="和訳"><br>
+      <input type="button" id="button" onclick="addList()" value="追加" />
+    </form>
+    <!-- ここにリストを表示 -->
+    <ul id="wordList"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
